@@ -26,11 +26,10 @@ app.use('/products',require('./routes/product'))
 
 // account routes
 app.use('/users',require('./routes/users'))
-// staff routes
-// app.use('/staff',require('./routes/staffRoutes'))
 
-// auth routes
-// app.use('/login',require('./routes/authRoutes'))
+// feedback route
+app.use('/feedback',require('./routes/feedback'))
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {

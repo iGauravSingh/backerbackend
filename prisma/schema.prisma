@@ -40,3 +40,9 @@ model Products {
   price Int
   stars Int
 }
+
+model Feedback {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+}
